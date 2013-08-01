@@ -13,6 +13,14 @@
            fetch="https://github.com/CyanogenMod/"
            revision="ics" />
 
+  <remote  name="pcm"
+           fetch="https://github.com/PecanCM/"
+           revision="ics" />
+
+  <remote  name="om"
+           fetch="https://github.com/OptimusMod/"
+           revision="ics" />
+
   <default remote="aosp"
            sync-j="4" />
 
@@ -27,6 +35,8 @@
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
   <project path="dalvik" name="AOKP/dalvik" remote="gh" revision="ics" />
   <project path="development" name="AOKP/platform_development" remote="gh" revision="ics" />
+
+  <project path="device/lge/p350" name="android_device_lge_p350" remote="pcm" revision="ics" />
   <project path="device/acer/picasso" name="AOKP/device_acer_picasso" remote="gh" revision="ics" />
   <project path="device/acer/t20-common" name="AOKP/device_acer_t20-common" remote="gh" revision="ics" />
   <project path="device/amazon/otter" name="AOKP/device_amazon_otter" remote="gh" revision="ics" />
@@ -35,7 +45,7 @@
   <project path="device/common" name="device/common" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
-  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"  />
+  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" remote="aosp" revision="refs/tags/android-4.0.4_r1.2" />
   <project path="device/htc/bravo" name="AOKP/device_htc_bravo" remote="gh" revision="ics" />
   <project path="device/htc/inc" name="AOKP/device_htc_inc" remote="gh" revision="ics" />
   <project path="device/htc/supersonic" name="AOKP/device_htc_supersonic" remote="gh" revision="ics" />
@@ -84,8 +94,7 @@
   <project path="device/samsung/vibrantmtd" name="AOKP/device_samsung_vibrantmtd" remote="gh" revision="ics" />
   <project path="device/samsung/p1c" name="AOKP/device_samsung_p1c" remote="gh" revision="ics" />
   <project path="device/samsung/p1-common" name="AOKP/device_samsung_p1-common" remote="gh" revision="ics" />
-  <project path="device/ti/panda" name="device/ti/panda" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
-  <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
+  <project path="device/ti/panda" name="device/ti/panda" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>  <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
   <project path="external/android-mock" name="platform/external/android-mock" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
   <project path="external/antlr" name="platform/external/antlr" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
   <project path="external/apache-harmony" name="platform/external/apache-harmony" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
@@ -225,13 +234,13 @@
   <project path="hardware/cm" name="AOKP/hardware_cm" remote="gh" revision="ics" />
   <project path="hardware/broadcom/wlan" name="AOKP/hardware_broadcom_wlan" remote="gh" revision="ics" />
   <project path="hardware/invensense" name="platform/hardware/invensense" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
-  <project path="hardware/libhardware" name="AOKP/hardware_libhardware" remote="gh" revision="ics" />
+  <project path="hardware/libhardware" name="AOKP/hardware_libhardware" remote="gh" revision="master" />
   <project path="hardware/libhardware_legacy" name="AOKP/hardware_libhardware_legacy" remote="gh" revision="ics" />
   <project path="hardware/qcom/display" name="AOKP/hardware_qcom_display" remote="gh" revision="ics" />
   <project path="hardware/qcom/camera" name="AOKP/hardware_qcom_camera" remote="gh" revision="ics" />
-  <project path="hardware/msm7k" name="AOKP/hardware_msm7k" remote="gh" revision="ics" />
+  <project path="hardware/msm7k" name="AOKP/hardware_msm7k" remote="gh" revision="master" />
   <project path="hardware/qcom/gps" name="AOKP/hardware_qcom_gps" remote="gh" revision="ics" />
-  <project path="hardware/qcom/media" name="AOKP/hardware_qcom_media" remote="gh" revision="ics" />
+  <project path="hardware/qcom/media" name="AOKP/hardware_qcom_media" remote="gh" revision="master" />
   <project path="hardware/ril" name="AOKP/hardware_ril" remote="gh" revision="ics" />
   <project path="hardware/samsung" name="AOKP/hardware_samsung" remote="gh" revision="ics" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
@@ -295,7 +304,7 @@
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
   <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
-  <project path="prebuilt" name="AOKP/prebuilt" remote="gh" revision="ics" />
+  <project path="prebuilt" name="AOKP/prebuilt" remote="gh" revision="jb" />
   <project path="sdk" name="platform/sdk" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
   <project path="system/bluetooth" name="AOKP/system_bluetooth" remote="gh" revision="ics"/>
   <project path="system/core" name="AOKP/system_core" remote="gh" revision="ics" />
@@ -304,6 +313,8 @@
   <project path="system/netd" name="platform/system/netd" remote="aosp" revision="refs/tags/android-4.0.4_r1.2"/>
   <project path="system/vold" name="AOKP/system_vold" remote="gh" revision="ics" />
 
+
+  <project path="vendor/lge" name="vendor_lge" remote="om" revision="ics" />
   <project path="vendor/samsung" name="AOKP/vendor_samsung" remote="gh" revision="ics" />
   <project path="vendor/aokp" name="AOKP/vendor_aokp_ics" remote="gh" revision="ics" />
   <project path="vendor/moto" name="AOKP/vendor_moto" remote="gh" revision="ics" />
@@ -320,7 +331,6 @@
 
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="ics" />
   <project path="system/su" name="AOKP/system_su" remote="gh" revision="ics" />
-  <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="gh" revision="ics" />
   <project path="packages/apps/ROMControl" name="AOKP/packages_apps_ROMControl" remote="gh" revision="ics" />
   <project path="packages/apps/Trebuchet" name="CyanogenMod/android_packages_apps_Trebuchet" remote="gh" revision="ics" />
   <project path="packages/apps/GanOptimizer" name="CyanogenMod/android_packages_apps_GanOptimizer" remote="gh" revision="gb-release-7.2" />
@@ -333,6 +343,6 @@
   <project name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" path="vendor/tmobile/providers/ThemeManager" revision="refs/heads/ics" remote="gh" />
   <project name="CyanogenMod/android_vendor_tmobile_products_themes" path="vendor/tmobile/products/themes" revision="refs/heads/ics" remote="gh" />
 
-  <project path="platform_manifest" name="AOKP/platform_manifest" remote="gh" revision="ics" />
+
 
 </manifest>
